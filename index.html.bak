@@ -1,21 +1,15 @@
-<!doctype html>
+s<!doctype html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lista de Compras do Sonho</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Lista de Compras</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <div class="title-wrapper">
-      <img class="header-icon" src="cereja_transparent.png" alt="Cereja">
-      <h1>Lista de Compras do Sonho</h1>
-    </div>
-    <p class="intro">Sua lista de compras inteligente. Adicione produtos, organize automaticamente por setores e controle quanto vai gastar antes mesmo de chegar ao caixa. Aproveite a lista de compras da Bel.</p>
+    <h1>Lista de Compras da Bel</h1>
+    <p class="intro">Olá — bem-vinda à lista de compras da Priscila. Aproveite muito!</p>
     <form id="item-form">
       <input id="item-input" placeholder="Adicione um item" autocomplete="off" required>
       <input id="item-qty" type="number" min="1" value="1" aria-label="Quantidade" required>
@@ -49,7 +43,16 @@
       <label class="color-label">Tema: <input id="color-picker" type="color" title="Escolher cor"></label>
       <button id="clear-btn">Limpar tudo</button>
     </div>
-    
+    <div class="playlist">
+      <h2>Playlist</h2>
+      <button id="play-all-btn" class="play-all">Abrir todas</button>
+      <form id="song-form">
+        <input id="song-title" placeholder="Título da música" required>
+        <input id="song-url" placeholder="URL opcional, Spotify/YouTube, outro link ou termo de busca">
+        <button type="submit">Adicionar música</button>
+      </form>
+      <ul id="playlist"></ul>
+    </div>
   </div>
   <script src="app.js" defer></script>
 </body>

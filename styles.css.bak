@@ -1,15 +1,7 @@
-:root{--bg:linear-gradient(90deg,#a8d0ff 0%,#a8d0ff 50%,#ffd6ea 50%,#ffd6ea 100%);--card:#ffffff;--accent:#ff69b4;--muted:#6b7280}
-*{box-sizing:border-box}
-body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;
-	background-image: linear-gradient(90deg,#a8d0ff 0%,#a8d0ff 50%,#ffd6ea 50%,#ffd6ea 100%), url('laço.jpg');
-	background-repeat: no-repeat, no-repeat;
-	background-position: center, right center;
-	background-size: 100% 100%, 50% 100%;
-	color:#111}
+:root{--bg:linear-gradient(135deg,#fff0f6 0%,#ffd6ea 100%);--card:#ffffff;--accent:#ff69b4;--muted:#6b7280}
+*{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#111}
 .container{max-width:640px;margin:48px auto;padding:20px}
-.title-wrapper{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:12px}
-h1{font-family:'Great Vibes', cursive;text-align:center;margin:0 0 18px;font-size:36px}
-.header-icon{width:120px;height:auto}
+h1{text-align:center;margin:0 0 18px}
 #intro{ }
 .intro{text-align:center;color:var(--muted);margin:8px 0 16px}
 #item-form{display:flex;gap:8px;margin-bottom:16px}
@@ -38,5 +30,15 @@ h1{font-family:'Great Vibes', cursive;text-align:center;margin:0 0 18px;font-siz
 .filter-btn{background:transparent;border:1px solid #eee;padding:8px 10px;border-radius:999px;cursor:pointer;color:var(--muted)}
 .filter-btn.active{background:var(--accent);color:#fff;border-color:transparent}
 
-
+.playlist{background:rgba(255,255,255,0.6);padding:12px;border-radius:8px;margin-top:16px}
+.playlist h2{margin:0 0 8px;font-size:18px}
+.playlist form{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.playlist input{padding:8px;border:1px solid #ddd;border-radius:6px;font-size:14px}
+.playlist button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.playlist ul{list-style:none;padding:0;margin:0}
+.playlist li.song-item{display:flex;justify-content:space-between;align-items:center;padding:8px;border:1px solid #eee;border-radius:6px;margin-bottom:8px;background:var(--card)}
+.song-actions{display:flex;gap:8px}
+.song-actions button{padding:6px 8px;border-radius:6px;border:1px solid #e2e8f0;background:transparent;cursor:pointer}
+.playlist .play-all{float:right;background:transparent;border:1px solid #eee;padding:6px 10px;border-radius:6px;cursor:pointer;color:var(--muted)}
+.playlist .play-all:hover{background:var(--accent);color:#fff;border-color:transparent}
 @media(max-width:480px){.container{margin:20px;padding:14px}#item-input{font-size:14px}}

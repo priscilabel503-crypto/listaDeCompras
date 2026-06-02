@@ -14,7 +14,12 @@ const filterContainer = document.querySelector('.filters')
 const voiceBtn = document.getElementById('voice-btn')
 const voiceStatus = document.getElementById('voice-status')
 
-
+const PLAYLIST_KEY = 'shoppingList:playlist'
+const songForm = document.getElementById('song-form')
+const songTitleInput = document.getElementById('song-title')
+const songUrlInput = document.getElementById('song-url')
+const playlistEl = document.getElementById('playlist')
+const playAllBtn = document.getElementById('play-all-btn')
 
 let currentFilter = localStorage.getItem(FILTER_KEY) || 'all'
 
@@ -29,7 +34,7 @@ function saveList(list){
 
 function parsePriceValue(raw){
   if(!raw) return null
-  const cleaned = raw.replace(/[^\d,\.]/g, '').replace(',', '.')
+  const cleaned = raw.replace(/[^\d,\.] /g, '').replace(',', '.')
   const value = parseFloat(cleaned)
   return isNaN(value) ? null : value
 }

@@ -2,8 +2,9 @@
 
 ## Descrição
 
+Aplicativo simples para organizar suas compras: permite adicionar itens com quantidade e setor, agrupa automaticamente por setor (ex.: Frios, Carnes, Hortifruti) e ordena os itens alfabeticamente dentro de cada grupo. Marque itens como comprados, filtre por Pendentes/Comprados/Todos e personalize a cor do tema; todas as informações são salvas no `localStorage` do navegador.
 
-Sua lista de compras inteligente. Adicione produtos, organize automaticamente por setores e controle quanto vai gastar antes mesmo de chegar ao caixa. Aproveite a lista de compras da Bel.
+Pequeno app de exemplo que salva uma lista de compras no navegador usando `localStorage`.
 
 Como usar:
 
@@ -24,6 +25,7 @@ Agrupamento e ordenação:
 
  - Os itens agora possuem um campo `Setor` (ex.: `Frios`, `Carnes`, `Hortifruti`).
  - A lista é exibida agrupada por setor e, dentro de cada setor, os itens são ordenados alfabeticamente.
+
 
 - Use o seletor de cor "Tema" para alterar a cor de destaque do app; a escolha é salva no `localStorage`.
 
